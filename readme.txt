@@ -10,7 +10,7 @@ Requires at least: 2.6
 
 Tested up to: 2.8
 
-Stable tag: 1.1
+Stable tag: 1.1.2
 
 
 
@@ -72,8 +72,8 @@ The Find Me On sidebar widget displays icons for all of your social network prof
 
 
 *** ALERT: If you have the 'Social Links' or 'About Me' plugin installed, disable them before installing this plugin  *** <br>
-1. Download the my-social-networks.zip file.<br>
-2. From your WordPress dashboard, click 'Plugins' \ 'Add New' \ Browse to my-social-networks.zip \ 'Install Now.'<br>
+1. Download the find-me-on.zip file.<br>
+2. From your WordPress dashboard, click 'Plugins' \ 'Add New' \ Browse to find-me-on.zip \ 'Install Now.'<br>
 3. WP will upload and install the plugin, then click 'Activate.'<br>
 4. Click 'Appearance\Widgets' and drag the widget to the sidebar you wish to display it in and customize the appearance options. <br>
 5. Click 'Appearance\Find Me On' and add your profiles.
