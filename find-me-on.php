@@ -4,7 +4,7 @@ Plugin Name: Find Me On
 Plugin URI: http://jeremyanticouni.com/find-me-on
 Description: The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *37* Social Network options, 16px or 32px icon size, mouseover higlight on/off, and seamless compatibility with both Social Links and About Me.  Another happy fork from the <a href="http://blog.maybe5.com/?page_id=94">Social Links</a> plugin.
 Author: Jeremy Anticouni
-Version: 1.0
+Version: 1.1
 Author URI: http://jeremyanticouni.com
 
 /*  Copyright 2009  Jeremy Anticouni  (email : plugins@jeremyanticouni.com)
