@@ -21,7 +21,7 @@ The Find Me On sidebar widget displays icons & links for all of your social netw
 
 
 
-The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *37* Social Network options, 16px or 32px icon size, and mouseover higlight on/off.
+The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *37* Social Network options, 16px or 32px icon size, and mouseover highlight on/off.
 
 
 **Supported Networks:**
