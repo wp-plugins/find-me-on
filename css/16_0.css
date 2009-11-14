@@ -1,0 +1,205 @@
+div.findmeon-bookmarks {
+	margin:10px 0 0 0;
+	clear: both !important;
+}
+div.findmeon-bookmarks-expand {
+	height: 15px;
+	/* overflow: hidden; */
+}
+
+div.findmeon-bookmarks ul.networks {
+	width:100% !important;
+	margin:0 !important;
+	padding:0 !important;
+	float: left !important;
+}
+
+div.findmeon-bookmarks ul.networks {
+	background:transparent none !important;
+	border:0 none !important;
+	outline:0 none !important;
+}
+
+div.findmeon-bookmarks ul.networks li {
+	display:inline !important;
+	float:left !important;
+	list-style-type:none !important;
+	margin:0px 0 0px 0; 							/*JTA: Sets margin between rows of icons */
+	height:16px !important;
+	width:24px !important;
+	cursor:pointer !important;
+	padding:0 0 0 0 !important;
+	background-color:transparent !important;
+	border:0 none !important;
+	outline:0 none !important;
+	clear:none !important;
+}
+
+div.findmeon-bookmarks ul.networks li:before, div.findmeon-bookmarks ul.networks li:after, div.findmeon-bookmarks ul.networks li a:before, div.findmeon-bookmarks ul.networks li a:after {
+	content:none !important;
+}
+
+div.findmeon-bookmarks ul.networks a {
+	display:block !important;
+	width:24px !important;
+	height:16px !important;
+	text-indent: -9999px !important;
+	background-color:transparent !important;
+}
+
+div.findmeon-bookmarks ul.networks a:hover, div.findmeon-bookmarks ul.networks li:hover {
+	background-color:transparent !important;
+	border:0 none !important;
+	outline:0 none !important;
+}
+
+li.findmeon-aim, li.findmeon-aim:hover,
+li.findmeon-amazon, li.findmeon-amazon:hover,
+li.findmeon-apple, li.findmeon-apple:hover,
+li.findmeon-bebo, li.findmeon-bebo:hover,
+li.findmeon-bitbucket, li.findmeon-bitbucket:hover,
+li.findmeon-blogger, li.findmeon-blogger:hover,
+li.findmeon-blogmarks, li.findmeon-blogmarks:hover,
+li.findmeon-Brightkite, li.findmeon-Brightkite:hover,
+li.findmeon-dapx, li.findmeon-dapx:hover,
+li.findmeon-delicious, li.findmeon-delicious:hover,
+li.findmeon-digg, li.findmeon-digg:hover,
+li.findmeon-diigo, li.findmeon-diigo:hover,
+li.findmeon-disqus, li.findmeon-disqus:hover,
+li.findmeon-ebay, li.findmeon-ebay:hover,
+li.findmeon-facebook, li.findmeon-facebook:hover,
+li.findmeon-facebookpages, li.findmeon-facebookpages:hover,
+li.findmeon-flickr, li.findmeon-flickr:hover,
+li.findmeon-friendfeed, li.findmeon-friendfeed:hover,
+li.findmeon-friendster, li.findmeon-friendster:hover,
+li.findmeon-github, li.findmeon-github:hover,
+li.findmeon-goodreads, li.findmeon-goodreads:hover,
+li.findmeon-google, li.findmeon-google:hover,
+li.findmeon-googlereader, li.findmeon-googlereader:hover,
+li.findmeon-googletalk, li.findmeon-googletalk:hover,
+li.findmeon-googlewave, li.findmeon-googlewave:hover,
+li.findmeon-hellotxt, li.findmeon-hellotxt:hover,
+li.findmeon-hi5, li.findmeon-hi5:hover,
+li.findmeon-hyves, li.findmeon-hyves:hover,
+li.findmeon-identica, li.findmeon-identica:hover,
+li.findmeon-imeem, li.findmeon-imeem:hover,
+li.findmeon-ilike, li.findmeon-ilike:hover,
+li.findmeon-jaiku, li.findmeon-jaiku:hover,
+li.findmeon-jeqq, li.findmeon-jeqq:hover,
+li.findmeon-koornk, li.findmeon-koornk:hover,
+li.findmeon-lastfm, li.findmeon-lastfm:hover,
+li.findmeon-linkedin, li.findmeon-linkedin:hover,
+li.findmeon-livejournal, li.findmeon-livejournal:hover,
+li.findmeon-multiply, li.findmeon-multiply:hover,
+li.findmeon-myspace, li.findmeon-myspace:hover,
+li.findmeon-myyearbook, li.findmeon-myyearbook:hover,
+li.findmeon-ning, li.findmeon-ning:hover,
+li.findmeon-orkut, li.findmeon-orkut:hover,
+li.findmeon-picasa, li.findmeon-picasa:hover,
+li.findmeon-photobucket, li.findmeon-photobucket:hover,
+li.findmeon-plaxopulse, li.findmeon-plaxopulse:hover,
+li.findmeon-plurk, li.findmeon-plurk:hover,
+li.findmeon-posterous, li.findmeon-posterous:hover,
+li.findmeon-presently, li.findmeon-presently:hover,
+li.findmeon-qype, li.findmeon-qype:hover,
+li.findmeon-radar, li.findmeon-radar:hover,
+li.findmeon-redgage, li.findmeon-redgage:hover,
+li.findmeon-seesmic, li.findmeon-seesmic:hover,
+li.findmeon-blog, li.findmeon-blog:hover,
+li.findmeon-shoutem, li.findmeon-shoutem:hover,
+li.findmeon-sixent, li.findmeon-sixent:hover,
+li.findmeon-streetmavens, li.findmeon-streetmavens:hover,
+li.findmeon-stumbleupon, li.findmeon-stumbleupon:hover,
+li.findmeon-tagged, li.findmeon-tagged:hover,
+li.findmeon-technorati, li.findmeon-technorati:hover,
+li.findmeon-tumblr, li.findmeon-tumblr:hover,
+li.findmeon-twitter, li.findmeon-twitter:hover,
+li.findmeon-vimeo, li.findmeon-vimeo:hover,
+li.findmeon-typepad, li.findmeon-typepad:hover,
+li.findmeon-utterli, li.findmeon-utterli:hover,
+li.findmeon-vox, li.findmeon-vox:hover,
+li.findmeon-wordpress, li.findmeon-wordpress:hover,
+li.findmeon-xanga, li.findmeon-xanga:hover,
+li.findmeon-xing, li.findmeon-xing:hover,
+li.findmeon-yahoomeme, li.findmeon-yahoomeme:hover,
+li.findmeon-yahooprofiles, li.findmeon-yahooprofiles:hover,
+li.findmeon-yammer, li.findmeon-yammer:hover,
+li.findmeon-yelp, li.findmeon-yelp:hover,
+li.findmeon-youtube, li.findmeon-youtube:hover
+{
+	background:url('../images/16_0.png') no-repeat !important;
+}
+
+li.findmeon-aim {background-position:0px bottom !important;}	li.findmeon-aim:hover {background-position:0px top !important;}
+li.findmeon-amazon {background-position:-24px bottom !important;}	li.findmeon-amazon:hover {background-position:-24px top !important;}
+li.findmeon-apple {background-position:-48px bottom !important;}	li.findmeon-apple:hover {background-position:-48px top !important;}
+li.findmeon-bebo {background-position:-72px bottom !important;}	li.findmeon-bebo:hover {background-position:-72px top !important;}
+li.findmeon-bitbucket {background-position:-96px bottom !important;}	li.findmeon-bitbucket:hover {background-position:-96px top !important;}
+li.findmeon-blogger {background-position:-120px bottom !important;}	li.findmeon-blogger:hover {background-position:-120px top !important;}
+li.findmeon-blogmarks {background-position:-144px bottom !important;}	li.findmeon-blogmarks:hover {background-position:-144px top !important;}
+li.findmeon-Brightkite {background-position:-168px bottom !important;}	li.findmeon-Brightkite:hover {background-position:-168px top !important;}
+li.findmeon-dapx {background-position:-192px bottom !important;}	li.findmeon-dapx:hover {background-position:-192px top !important;}
+li.findmeon-delicious {background-position:-216px bottom !important;}	li.findmeon-delicious:hover {background-position:-216px top !important;}
+li.findmeon-digg {background-position:-240px bottom !important;}	li.findmeon-digg:hover {background-position:-240px top !important;}
+li.findmeon-diigo {background-position:-264px bottom !important;}	li.findmeon-diigo:hover {background-position:-264px top !important;}
+li.findmeon-disqus {background-position:-288px bottom !important;}	li.findmeon-disqus:hover {background-position:-288px top !important;}
+li.findmeon-ebay {background-position:-312px bottom !important;}	li.findmeon-ebay:hover {background-position:-312px top !important;}
+li.findmeon-facebook {background-position:-336px bottom !important;}	li.findmeon-facebook:hover {background-position:-336px top !important;}
+li.findmeon-facebookpages {background-position:-360px bottom !important;}	li.findmeon-facebookpages:hover {background-position:-360px top !important;}
+li.findmeon-flickr {background-position:-384px bottom !important;}	li.findmeon-flickr:hover {background-position:-384px top !important;}
+li.findmeon-friendfeed {background-position:-408px bottom !important;}	li.findmeon-friendfeed:hover {background-position:-408px top !important;}
+li.findmeon-friendster {background-position:-432px bottom !important;}	li.findmeon-friendster:hover {background-position:-432px top !important;}
+li.findmeon-github {background-position:-456px bottom !important;}	li.findmeon-github:hover {background-position:-456px top !important;}
+li.findmeon-goodreads {background-position:-480px bottom !important;}	li.findmeon-goodreads:hover {background-position:-480px top !important;}
+li.findmeon-google {background-position:-504px bottom !important;}	li.findmeon-google:hover {background-position:-504px top !important;}
+li.findmeon-googlereader {background-position:-528px bottom !important;}	li.findmeon-googlereader:hover {background-position:-528px top !important;}
+li.findmeon-googletalk {background-position:-552px bottom !important;}	li.findmeon-googletalk:hover {background-position:-552px top !important;}
+li.findmeon-googlewave {background-position:-576px bottom !important;}	li.findmeon-googlewave:hover {background-position:-576px top !important;}
+li.findmeon-hellotxt {background-position:-600px bottom !important;}	li.findmeon-hellotxt:hover {background-position:-600px top !important;}
+li.findmeon-hi5 {background-position:-624px bottom !important;}	li.findmeon-hi5:hover {background-position:-624px top !important;}
+li.findmeon-hyves {background-position:-648px bottom !important;}	li.findmeon-hyves:hover {background-position:-648px top !important;}
+li.findmeon-identica {background-position:-672px bottom !important;}	li.findmeon-identica:hover {background-position:-672px top !important;}
+li.findmeon-imeem {background-position:-696px bottom !important;}	li.findmeon-imeem:hover {background-position:-696px top !important;}
+li.findmeon-ilike {background-position:-720px bottom !important;}	li.findmeon-ilike:hover {background-position:-720px top !important;}
+li.findmeon-jaiku {background-position:-744px bottom !important;}	li.findmeon-jaiku:hover {background-position:-744px top !important;}
+li.findmeon-jeqq {background-position:-768px bottom !important;}	li.findmeon-jeqq:hover {background-position:-768px top !important;}
+li.findmeon-koornk {background-position:-792px bottom !important;}	li.findmeon-koornk:hover {background-position:-792px top !important;}
+li.findmeon-lastfm {background-position:-816px bottom !important;}	li.findmeon-lastfm:hover {background-position:-816px top !important;}
+li.findmeon-linkedin {background-position:-840px bottom !important;}	li.findmeon-linkedin:hover {background-position:-840px top !important;}
+li.findmeon-livejournal {background-position:-864px bottom !important;}	li.findmeon-livejournal:hover {background-position:-864px top !important;}
+li.findmeon-multiply {background-position:-888px bottom !important;}	li.findmeon-multiply:hover {background-position:-888px top !important;}
+li.findmeon-myspace {background-position:-912px bottom !important;}	li.findmeon-myspace:hover {background-position:-912px top !important;}
+li.findmeon-myyearbook {background-position:-936px bottom !important;}	li.findmeon-myyearbook:hover {background-position:-936px top !important;}
+li.findmeon-ning {background-position:-960px bottom !important;}	li.findmeon-ning:hover {background-position:-960px top !important;}
+li.findmeon-orkut {background-position:-984px bottom !important;}	li.findmeon-orkut:hover {background-position:-984px top !important;}
+li.findmeon-picasa {background-position:-1008px bottom !important;}	li.findmeon-picasa:hover {background-position:-1008px top !important;}
+li.findmeon-photobucket {background-position:-1032px bottom !important;}	li.findmeon-photobucket:hover {background-position:-1032px top !important;}
+li.findmeon-plaxopulse {background-position:-1056px bottom !important;}	li.findmeon-plaxopulse:hover {background-position:-1056px top !important;}
+li.findmeon-plurk {background-position:-1080px bottom !important;}	li.findmeon-plurk:hover {background-position:-1080px top !important;}
+li.findmeon-posterous {background-position:-1104px bottom !important;}	li.findmeon-posterous:hover {background-position:-1104px top !important;}
+li.findmeon-presently {background-position:-1128px bottom !important;}	li.findmeon-presently:hover {background-position:-1128px top !important;}
+li.findmeon-qype {background-position:-1152px bottom !important;}	li.findmeon-qype:hover {background-position:-1152px top !important;}
+li.findmeon-radar {background-position:-1176px bottom !important;}	li.findmeon-radar:hover {background-position:-1176px top !important;}
+li.findmeon-redgage {background-position:-1200px bottom !important;}	li.findmeon-redgage:hover {background-position:-1200px top !important;}
+li.findmeon-seesmic {background-position:-1224px bottom !important;}	li.findmeon-seesmic:hover {background-position:-1224px top !important;}
+li.findmeon-blog {background-position:-1248px bottom !important;}	li.findmeon-blog:hover {background-position:-1248px top !important;}
+li.findmeon-shoutem {background-position:-1272px bottom !important;}	li.findmeon-shoutem:hover {background-position:-1272px top !important;}
+li.findmeon-sixent {background-position:-1296px bottom !important;}	li.findmeon-sixent:hover {background-position:-1296px top !important;}
+li.findmeon-streetmavens {background-position:-1320px bottom !important;}	li.findmeon-streetmavens:hover {background-position:-1320px top !important;}
+li.findmeon-stumbleupon {background-position:-1344px bottom !important;}	li.findmeon-stumbleupon:hover {background-position:-1344px top !important;}
+li.findmeon-tagged {background-position:-1368px bottom !important;}	li.findmeon-tagged:hover {background-position:-1368px top !important;}
+li.findmeon-technorati {background-position:-1392px bottom !important;}	li.findmeon-technorati:hover {background-position:-1392px top !important;}
+li.findmeon-tumblr {background-position:-1416px bottom !important;}	li.findmeon-tumblr:hover {background-position:-1416px top !important;}
+li.findmeon-twitter {background-position:-1440px bottom !important;}	li.findmeon-twitter:hover {background-position:-1440px top !important;}
+li.findmeon-vimeo {background-position:-1464px bottom !important;}	li.findmeon-vimeo:hover {background-position:-1464px top !important;}
+li.findmeon-typepad {background-position:-1488px bottom !important;}	li.findmeon-typepad:hover {background-position:-1488px top !important;}
+li.findmeon-utterli {background-position:-1512px bottom !important;}	li.findmeon-utterli:hover {background-position:-1512px top !important;}
+li.findmeon-vox {background-position:-1536px bottom !important;}	li.findmeon-vox:hover {background-position:-1536px top !important;}
+li.findmeon-wordpress {background-position:-1560px bottom !important;}	li.findmeon-wordpress:hover {background-position:-1560px top !important;}
+li.findmeon-xanga {background-position:-1584px bottom !important;}	li.findmeon-xanga:hover {background-position:-1584px top !important;}
+li.findmeon-xing {background-position:-1608px bottom !important;}	li.findmeon-xing:hover {background-position:-1608px top !important;}
+li.findmeon-yahoomeme {background-position:-1632px bottom !important;}	li.findmeon-yahoomeme:hover {background-position:-1632px top !important;}
+li.findmeon-yahooprofiles {background-position:-1656px bottom !important;}	li.findmeon-yahooprofiles:hover {background-position:-1656px top !important;}
+li.findmeon-yammer {background-position:-1680px bottom !important;}	li.findmeon-yammer:hover {background-position:-1680px top !important;}
+li.findmeon-yelp {background-position:-1704px bottom !important;}	li.findmeon-yelp:hover {background-position:-1704px top !important;}
+li.findmeon-youtube {background-position:-1728px bottom !important;}	li.findmeon-youtube:hover {background-position:-1728px top !important;}
