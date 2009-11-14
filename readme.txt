@@ -4,74 +4,108 @@ Contributors: jeremyanticouni
 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9476350
 
-Tags: Find Me On, AddThis, Social Links, About Me, widget, plugin, sidebar, social networks, social networking, profile page, social links, icon links, AIM, Amazon Wishlist, Bebo, Bitbucket, Blogger, BlogMarks, Dapx, Delicious, Digg, Disqus, Ebay, Facebook, Flickr, FriendFeed, Github, GoodReads, Google Profile, Google Reader, Hellotxt, Hyves.nl, Jeqq, Last.fm, LinkedIn, MySpace, Orkut, Picasa Web Album, Plurk, Qype, RedGage, RSS, Sixent, Stumble Upon, Technorati, Twitter, Vimeo, Wordpress, Xing, YouTube, 
+Tags: Find Me On, AddThis, Social Links, About Me, widget, plugin, sidebar, social networks, social networking, profile page, social links, icon links, AIM, Amazon Wishlist, Apple, Bebo, Bitbucket, Blogger, BlogMarks, BrightKite, Dapx, Delicious, Digg, Diigo, Disqus, Ebay, Facebook, Facebook Page, Flickr, FriendFeed, Friendster, Github, GoodReads, Google Profile, Google Reader, Google Talk, Google Wave, Hellotxt, Hi5, Hyves.nl, Identi.ca, Imeem, iLike, Jaiku, Jeqq, Koornk, Last.fm, LinkedIn, LiveJournal, Multiply, MySpace, MyYearbook, Ning, Orkut, Picasa Web Album, Photobucket, Plaxo Pulse, Plurk, Posterous, Present.ly, Qype, Radar, RedGage, Seesmic, RSS, Shoutem, Sixent, StreetMavens, Stumble Upon, Tagged, Technorati, Tumblr, Twitter, Vimeo, Typepad, Utterli, Vox, Wordpress, Xanga, Xing, Yahoo Meme, Yahoo Profile, Yammer, Yelp, YouTube  
 
 Requires at least: 2.6
 
-Tested up to: 2.8
+Tested up to: 2.8.6
 
-Stable tag: 1.1.2
+Stable tag: 2.0
 
 
 
-The Find Me On sidebar widget displays icons & links for all of your social network profiles. *37* Supported Social Networks!
+The Find Me On sidebar widget displays icons & links for all of your social network profiles. *73* Supported Social Networks!
 
 
 == Description ==
 
 
 
-The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *37* Social Network options, 16px or 32px icon size, and mouseover highlight on/off.
+The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *73* Social Network options, 16px or 32px icon size, and three icon styles, including sexy-style.
 
 
 **Supported Networks:**
 
 
 * AIM
-* Amazon Wishlist
-* Bebo
-* Bitbucket
-* Blogger
-* BlogMarks
-* Dapx
-* Delicious
-* Digg
-* Disqus
-* Ebay
-* Facebook
-* Flickr
-* FriendFeed
-* Github
-* GoodReads
-* Google Profile
-* Google Reader
-* Hellotxt
-* Hyves.nl
-* Jeqq
-* Last.fm
-* LinkedIn
-* MySpace
-* Orkut
-* Picasa Web Album
-* Plurk
-* Qype
-* RedGage
-* RSS
-* Sixent
-* Stumble Upon
-* Technorati
-* Twitter
-* Vimeo
-* Wordpress
-* Xing
-* YouTube
+* Amazon Wishlist 
+* Apple NEW!
+* Bebo 
+* Bitbucket 
+* Blogger 
+* BlogMarks 
+* BrightKite NEW!
+* Dapx 
+* Delicious 
+* Digg 
+* Diigo NEW!
+* Disqus 
+* Ebay 
+* Facebook 
+* Facebook Page NEW!
+* Flickr 
+* FriendFeed 
+* Friendster NEW!
+* Github 
+* GoodReads 
+* Google Profile 
+* Google Reader 
+* Google Talk NEW!
+* Google Wave NEW!
+* Hellotxt 
+* Hi5 NEW!
+* Hyves.nl 
+* Identi.ca NEW!
+* Imeem NEW!
+* iLike NEW!
+* Jaiku NEW!
+* Jeqq 
+* Koornk NEW!
+* Last.fm 
+* LinkedIn 
+* LiveJournal NEW!
+* Multiply NEW!
+* MySpace 
+* MyYearbook NEW!
+* Ning NEW!
+* Orkut 
+* Picasa Web Album 
+* Photobucket NEW!
+* Plaxo Pulse NEW!
+* Plurk 
+* Posterous NEW!
+* Present.ly NEW!
+* Qype 
+* Radar NEW!
+* RedGage 
+* Seesmic NEW!
+* RSS NEW!
+* Shoutem 
+* Sixent NEW!
+* StreetMavens 
+* Stumble Upon NEW!
+* Tagged 
+* Technorati NEW!
+* Tumblr 
+* Twitter 
+* Vimeo NEW!
+* Typepad NEW!
+* Utterli NEW!
+* Vox 
+* Wordpress NEW!
+* Xanga 
+* Xing NEW!
+* Yahoo Meme NEW!
+* Yahoo Profile NEW!
+* Yammer NEW!
+* Yelp 
+* YouTube 
 
 
 
 == Installation ==
 
 
-*** ALERT: If you have the 'Social Links' or 'About Me' plugin installed, disable them before installing this plugin  *** <br>
 1. Download the find-me-on.zip file.<br>
 2. From your WordPress dashboard, click 'Plugins' \ 'Add New' \ Browse to find-me-on.zip \ 'Install Now.'<br>
 3. WP will upload and install the plugin, then click 'Activate.'<br>
@@ -99,13 +133,13 @@ Additional sites/services will be added in future releases of Find Me On.
 
 
 
-1. Find Me On Add New Social Network interface
-2. Widget Configuration Options
-3. Small (16px) Active/Inactive Icons
-4. Large (32px) Active/Inactive Icons
+1. Find Me On Settings Page
+3. Small (16px) Icon Styles
+4. Large (32px) Icon Styles
 
 
 
 == Change Log ==
+* 2.0 Major rewrite, added 2x networks, completely new management page
 * 1.1 "Fixed" AJAX Loading, forces page reload
 * 1.0 First Release
