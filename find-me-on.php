@@ -917,9 +917,14 @@ function widget_find_me_on_settings(){
                     
                     
                     <div class="padding">
+                    <p>Do you have a fancy name in mind for the widget?</p>
+                        <input type="text" id="find-me-on-title" name="find-me-on-title" value="<?php echo $title; ?>" /></label>
+                     </div>
+
+                     <div class="padding">
                     <form name="findmeon-bookmarks" id="findmeon-bookmarks" action="" method="post">
 								<input type="hidden" name="find-me-on-submit" id="find-me-on-submit" value="1" />
-                                <input class="button-secondary" type="submit" value="Set Icon Size and Style"/>
+                                <input class="button-secondary" type="submit" value="Set Size and Style Options"/>
                                 </form>    
                      </div>
 				</div>
