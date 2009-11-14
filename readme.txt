@@ -24,80 +24,80 @@ The Find Me On sidebar widget displays icons & links for all of your social netw
 The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *73* Social Network options, 16px or 32px icon size, and three icon styles, including sexy-style.
 
 
-**Supported Networks:**
-
-
-* AIM
-* Amazon Wishlist 
+**Supported Networks, New in v2:**
 * Apple NEW!
-* Bebo 
-* Bitbucket 
-* Blogger 
-* BlogMarks 
 * BrightKite NEW!
-* Dapx 
-* Delicious 
-* Digg 
+* Facebook Fan Pages NEW!
 * Diigo NEW!
-* Disqus 
-* Ebay 
-* Facebook 
-* Facebook Page NEW!
-* Flickr 
-* FriendFeed 
 * Friendster NEW!
-* Github 
-* GoodReads 
-* Google Profile 
-* Google Reader 
 * Google Talk NEW!
 * Google Wave NEW!
-* Hellotxt 
-* Hi5 NEW!
-* Hyves.nl 
 * Identi.ca NEW!
+* Hi5 NEW!
 * Imeem NEW!
 * iLike NEW!
 * Jaiku NEW!
-* Jeqq 
 * Koornk NEW!
-* Last.fm 
-* LinkedIn 
 * LiveJournal NEW!
-* Multiply NEW!
-* MySpace 
 * MyYearbook NEW!
-* Ning NEW!
-* Orkut 
-* Picasa Web Album 
+* Multiply NEW!
 * Photobucket NEW!
 * Plaxo Pulse NEW!
-* Plurk 
 * Posterous NEW!
 * Present.ly NEW!
-* Qype 
 * Radar NEW!
-* RedGage 
 * Seesmic NEW!
-* RSS NEW!
-* Shoutem 
 * Sixent NEW!
-* StreetMavens 
 * Stumble Upon NEW!
-* Tagged 
 * Technorati NEW!
-* Tumblr 
-* Twitter 
 * Vimeo NEW!
 * Typepad NEW!
 * Utterli NEW!
-* Vox 
 * Wordpress NEW!
-* Xanga 
 * Xing NEW!
 * Yahoo Meme NEW!
 * Yahoo Profile NEW!
 * Yammer NEW!
+
+**Supported Networks:**
+* AIM
+* Amazon Wishlist 
+* Bebo 
+* Bitbucket 
+* Blogger 
+* BlogMarks 
+* Dapx 
+* Delicious 
+* Digg 
+* Disqus 
+* Ebay 
+* Facebook 
+* Flickr 
+* FriendFeed 
+* Github 
+* GoodReads 
+* Google Profile 
+* Google Reader 
+* Hellotxt 
+* Hyves.nl 
+* Jeqq 
+* Last.fm 
+* LinkedIn 
+* MySpace 
+* Ning NEW!
+* Orkut 
+* Picasa Web Album 
+* Plurk 
+* Qype 
+* RedGage 
+* RSS NEW!
+* Shoutem 
+* StreetMavens 
+* Tagged 
+* Tumblr 
+* Twitter 
+* Vox 
+* Xanga 
 * Yelp 
 * YouTube 
 
@@ -110,7 +110,10 @@ The Find Me On sidebar widget displays icons for all of your social network prof
 2. From your WordPress dashboard, click 'Plugins' \ 'Add New' \ Browse to find-me-on.zip \ 'Install Now.'<br>
 3. WP will upload and install the plugin, then click 'Activate.'<br>
 4. Click 'Appearance\Widgets' and drag the widget to the sidebar you wish to display it in and customize the appearance options. <br>
-5. Click 'Appearance\Find Me On' and add your profiles.
+5. Click 'Appearance\Find Me On' and add your profiles.<br><br>
+
+Please Note:<br>
+You will need to re-add your links for v.2; a bug that caused long URLs to be truncated has been fixed.  Future versions will be seamless upgrades.
 
 
 
@@ -140,6 +143,7 @@ Additional sites/services will be added in future releases of Find Me On.
 
 
 == Change Log ==
+* 2.0.3 Updated unneeded images, minor bug fix.
 * 2.0 Major rewrite, added 2x networks, completely new management page
 * 1.1 "Fixed" AJAX Loading, forces page reload
 * 1.0 First Release
