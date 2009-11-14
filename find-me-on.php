@@ -5,7 +5,7 @@ Plugin URI: http://jeremyanticouni.com/wordpress-plugins/find-me-on/
 Description: The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *73* Social Network options, 16px or 32px icon size, and three icon styles, including "sexy-style". Configure all the options on the <a href="options-general.php?page=find-me-on.php">configuration page</a>.  Originally forked from the <a href="http://blog.maybe5.com/?page_id=94">Social Links</a> plugin.
 Author: Jeremy Anticouni
 Crack Coder: Ian Bruce =P
-Version: 2.0.3
+Version: 2.0.5
 Author URI: http://jeremyanticouni.com
 
 
@@ -34,8 +34,8 @@ http://www.gnu.org/licenses/gpl.txt
 		register_activation_hook(__FILE__,'find_me_on_install');
 		
 //TO DO use these definitions instead
-define('find_me_on_VERSION', '1.0.11');
-define('find_me_on_DB_VERSION', '1.1');
+define('find_me_on_VERSION', '2.0.4');
+define('find_me_on_DB_VERSION', '2.1');
 
 define('KEY_SITE_ID',0);
 define('KEY_IMAGE',1);
@@ -163,9 +163,9 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 				echo $before_title . $title . $after_title ;
 		
 			echo '<!-- Find Me On Version: '. find_me_on_VERSION .' -->';
-			echo "<div id='findmeonContainer' style='width:100%;'>";
+//			echo "<div id='findmeonContainer' style='width:100%;'>";
 			echo generatefindmeonInnerHTML();
-			echo '</div>';
+//			echo '</div>';
 			echo $after_widget;
 			
 		}
@@ -434,7 +434,7 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 		 	
 			echo '<link type="text/css" rel="stylesheet" href="' . $findmeonplugindir . '/css/' .$iconsize.'_' .$iconstyle.'.css" />' . "\n";
 					
-			echo '<div class="findmeon-bookmarks findmeon-bookmarks-expand findmeon-bookmarks-bg-enjoy" style="margin: 0px 0pt 0pt ! important; padding: 0px 0pt 0pt 10px ! important; height: 32px; display: inline ! important; clear: both ! important;"><ul class="networks">';
+			echo '<div class="findmeon-bookmarks findmeon-bookmarks-expand findmeon-bookmarks-bg-enjoy" style="margin: 0px 0pt 0pt ! important; padding: 0px 0pt 0pt 32px ! important; height: 32px; display: inline ! important; clear: both ! important;"><ul class="networks">';
 			
 		 	foreach ($rows as $row) {
 		 		//WPD_print("SiteID: " . $row[1]);
@@ -490,7 +490,7 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
                 $previewinnerHTML = $previewinnerHTML . 
                 
                 
-                 "<span id='link_$row[0]' title='$url'><img style='margin:2px' onmouseover='javascript:openDumpster();' onmouseout='javascript:closeDumpster();' src='$findmeonplugindir/images/icons/".$linkInfoArray[KEY_IMAGE]."_32.png' alt='".$linkInfoArray[KEY_DISPLAY_NAME]."'/></span>";
+                 "&nbsp;&nbsp;&nbsp;<span style=\"margin-left:10px; margin-right:10px;\" id='link_$row[0]' title='$url'><img style='margin:2px' onmouseover='javascript:openDumpster();' onmouseout='javascript:closeDumpster();' src='$findmeonplugindir/images/icons/".$linkInfoArray[KEY_IMAGE]."_32.png' alt='".$linkInfoArray[KEY_DISPLAY_NAME]."'/></span>&nbsp;&nbsp;&nbsp;";
 				 
 				 
 				 
@@ -689,6 +689,24 @@ function widget_find_me_on_settings(){
 				//]]>
 				</script>
                 
+                
+                  <!--[if lt IE 7]>
+              <div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+                <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
+                <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+                  <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+                  <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+                    <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>You are using an outdated browser</div>
+                    <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>For a better experience using this site, please upgrade to a modern web browser.</div>
+                  </div>
+                  <div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
+                  <div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
+                  <div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>
+                  <div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+                </div>
+              </div>
+              <![endif]-->
+
              
                 
         <link rel="stylesheet" href="<?php echo $findmeonplugindir ?>/css/admin-style.css" type="text/css" media="all" />
