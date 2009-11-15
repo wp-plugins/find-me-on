@@ -10,7 +10,7 @@ Requires at least: 2.6
 
 Tested up to: 2.8.6
 
-Stable tag: 2.0
+Stable tag: 2.0.6
 
 
 
@@ -24,82 +24,82 @@ The Find Me On sidebar widget displays icons & links for all of your social netw
 The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *73* Social Network options, 16px or 32px icon size, and three icon styles, including sexy-style.
 
 
-**Supported Networks, New in v2:**
-* Apple NEW!
-* BrightKite NEW!
-* Facebook Fan Pages NEW!
-* Diigo NEW!
-* Friendster NEW!
-* Google Talk NEW!
-* Google Wave NEW!
-* Identi.ca NEW!
-* Hi5 NEW!
-* Imeem NEW!
-* iLike NEW!
-* Jaiku NEW!
-* Koornk NEW!
-* LiveJournal NEW!
-* MyYearbook NEW!
-* Multiply NEW!
-* Photobucket NEW!
-* Plaxo Pulse NEW!
-* Posterous NEW!
-* Present.ly NEW!
-* Radar NEW!
-* Seesmic NEW!
-* Sixent NEW!
-* Stumble Upon NEW!
-* Technorati NEW!
-* Vimeo NEW!
-* Typepad NEW!
-* Utterli NEW!
-* Wordpress NEW!
-* Xing NEW!
-* Yahoo Meme NEW!
-* Yahoo Profile NEW!
-* Yammer NEW!
-
-**Supported Networks:**
-* AIM
-* Amazon Wishlist 
-* Bebo 
-* Bitbucket 
-* Blogger 
-* BlogMarks 
-* Dapx 
-* Delicious 
-* Digg 
-* Disqus 
-* Ebay 
-* Facebook 
-* Flickr 
-* FriendFeed 
-* Github 
-* GoodReads 
-* Google Profile 
-* Google Reader 
-* Hellotxt 
-* Hyves.nl 
-* Jeqq 
-* Last.fm 
-* LinkedIn 
-* MySpace 
-* Ning NEW!
-* Orkut 
-* Picasa Web Album 
-* Plurk 
-* Qype 
-* RedGage 
-* RSS NEW!
-* Shoutem 
-* StreetMavens 
-* Tagged 
-* Tumblr 
-* Twitter 
-* Vox 
-* Xanga 
-* Yelp 
-* YouTube 
+**NEW Supported Networks:**<br>
+* Apple NEW!<br>
+* BrightKite NEW!<br>
+* Facebook Fan Pages NEW!<br>
+* Diigo NEW!<br>
+* Friendster NEW!<br>
+* Google Talk NEW!<br>
+* Google Wave NEW!<br>
+* Identi.ca NEW!<br>
+* Hi5 NEW!<br>
+* Imeem NEW!<br>
+* iLike NEW!<br>
+* Jaiku NEW!<br>
+* Koornk NEW!<br>
+* LiveJournal NEW!<br>
+* MyYearbook NEW!<br>
+* Multiply NEW!<br>
+* Photobucket NEW!<br>
+* Plaxo Pulse NEW!<br>
+* Posterous NEW!<br>
+* Present.ly NEW!<br>
+* Radar NEW!<br>
+* Seesmic NEW!<br>
+* Sixent NEW!<br>
+* Stumble Upon NEW!<br>
+* Technorati NEW!<br>
+* Vimeo NEW!<br>
+* Typepad NEW!<br>
+* Utterli NEW!<br>
+* Wordpress NEW!<br>
+* Xing NEW!<br>
+* Yahoo Meme NEW!<br>
+* Yahoo Profile NEW!<br>
+* Yammer NEW!<br>
+<br><br>
+**Supported Networks:**<br>
+* AIM<br>
+* Amazon Wishlist <br>
+* Bebo <br>
+* Bitbucket <br>
+* Blogger <br>
+* BlogMarks <br>
+* Dapx <br>
+* Delicious<br> 
+* Digg <br>
+* Disqus <br>
+* Ebay <br>
+* Facebook <br>
+* Flickr <br>
+* FriendFeed <br>
+* Github <br>
+* GoodReads <br>
+* Google Profile<br> 
+* Google Reader <br>
+* Hellotxt <br>
+* Hyves.nl <br>
+* Jeqq <br>
+* Last.fm <br>
+* LinkedIn <br>
+* MySpace <br>
+* Ning NEW!<br>
+* Orkut <br>
+* Picasa Web Album <br>
+* Plurk <br>
+* Qype <br>
+* RedGage <br>
+* RSS NEW!<br>
+* Shoutem <br>
+* StreetMavens <br>
+* Tagged <br>
+* Tumblr <br>
+* Twitter <br>
+* Vox <br>
+* Xanga <br>
+* Yelp <br>
+* YouTube <br>
 
 
 
@@ -143,6 +143,7 @@ Additional sites/services will be added in future releases of Find Me On.
 
 
 == Change Log ==
+* 2.0.6 Added Widget title on settings page
 * 2.0.3 Updated unneeded images, minor bug fix.
 * 2.0 Major rewrite, added 2x networks, completely new management page
 * 1.1 "Fixed" AJAX Loading, forces page reload

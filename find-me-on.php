@@ -5,7 +5,7 @@ Plugin URI: http://jeremyanticouni.com/wordpress-plugins/find-me-on/
 Description: The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *73* Social Network options, 16px or 32px icon size, and three icon styles, including "sexy-style". Configure all the options on the <a href="options-general.php?page=find-me-on.php">configuration page</a>.  Originally forked from the <a href="http://blog.maybe5.com/?page_id=94">Social Links</a> plugin.
 Author: Jeremy Anticouni
 Crack Coder: Ian Bruce =P
-Version: 2.0.5
+Version: 2.0.6
 Author URI: http://jeremyanticouni.com
 
 
@@ -34,7 +34,7 @@ http://www.gnu.org/licenses/gpl.txt
 		register_activation_hook(__FILE__,'find_me_on_install');
 		
 //TO DO use these definitions instead
-define('find_me_on_VERSION', '2.0.4');
+define('find_me_on_VERSION', '2.0.6');
 define('find_me_on_DB_VERSION', '2.1');
 
 define('KEY_SITE_ID',0);
