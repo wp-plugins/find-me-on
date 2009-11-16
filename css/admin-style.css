@@ -47,7 +47,12 @@ div.findmeon-wrap {
 .demo-16 {
 	background:transparent url('../images/demo_16.png') no-repeat scroll 0 0; bottom: 0;
 }
-
+.demo-self {
+	background:transparent url('../images/demo_self.png') no-repeat scroll 0 0; bottom: 0;
+}
+.demo-blank {
+	background:transparent url('../images/demo_blank.png') no-repeat scroll 0 0; bottom: 0;
+}
 
 .share-care {
 	background:transparent url('../images/findmeon-trans.png') no-repeat scroll 0 0;

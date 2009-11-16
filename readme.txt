@@ -143,6 +143,7 @@ Additional sites/services will be added in future releases of Find Me On.
 
 
 == Change Log ==
+* 2.0.7 Added link options, _blank/_self + onclick options
 * 2.0.6 Added Widget title on settings page
 * 2.0.3 Updated unneeded images, minor bug fix.
 * 2.0 Major rewrite, added 2x networks, completely new management page

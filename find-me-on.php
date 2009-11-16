@@ -5,7 +5,8 @@ Plugin URI: http://jeremyanticouni.com/wordpress-plugins/find-me-on/
 Description: The Find Me On sidebar widget displays icons for all of your social network profiles. Includes *73* Social Network options, 16px or 32px icon size, and three icon styles, including "sexy-style". Configure all the options on the <a href="options-general.php?page=find-me-on.php">configuration page</a>.  Originally forked from the <a href="http://blog.maybe5.com/?page_id=94">Social Links</a> plugin.
 Author: Jeremy Anticouni
 Crack Coder: Ian Bruce =P
-Version: 2.0.6
+Ace in the Hole: Jeremy Ethan Bohr
+Version: 2.0.7
 Author URI: http://jeremyanticouni.com
 
 
@@ -34,7 +35,7 @@ http://www.gnu.org/licenses/gpl.txt
 		register_activation_hook(__FILE__,'find_me_on_install');
 		
 //TO DO use these definitions instead
-define('find_me_on_VERSION', '2.0.6');
+define('find_me_on_VERSION', '2.0.7');
 define('find_me_on_DB_VERSION', '2.1');
 
 define('KEY_SITE_ID',0);
@@ -182,6 +183,8 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 				$newoptions['width'] = strip_tags(stripslashes($_POST['find-me-on-width']));
 				$newoptions['iconsize'] = strip_tags(stripslashes($_POST['find-me-on-iconsize']));
 				$newoptions['iconstyle'] = strip_tags(stripslashes($_POST['find-me-on-iconstyle']));
+				$newoptions['windowlocation'] = strip_tags(stripslashes($_POST['find-me-on-windowlocation']));
+				$newoptions['onclick'] = strip_tags(stripslashes($_POST['find-me-on-onclick']));
 	
 	
 				if ( $options != $newoptions ) {
@@ -194,6 +197,8 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 			$width = empty($options['width']) ? 100 : $options['width'];
 			$iconsize = empty($options['iconsize']) ? 16 : $options['iconsize'];
 			$iconstyle = empty($options['iconstyle']) ? 0 : $options['iconstyle'];
+			$windowlocation = empty($options['windowlocation']) ? '_blank' : $options['windowlocation'];
+			$onclick = empty($options['onclick']) ? '' : $options['onclick'];
 	
     		
 			?>
@@ -425,6 +430,8 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 
 			$iconsize = empty($options['iconsize']) ? 16 : $options['iconsize'];
 			$iconstyle = empty($options['iconstyle']) ? 0 : $options['iconstyle'];
+			$windowlocation = empty($options['windowlocation']) ? '_default' : $options['windowlocation'];
+			$onclick = empty($options['onclick']) ? '' : $options['onclick'];
 
 			
 		 	$rows = getfindmeon();
@@ -444,7 +451,7 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 	
                 
                 $innerHTML = $innerHTML."
-				<li class=\"findmeon-".$linkInfoArray[KEY_IMAGE]."\"><a href=\"".$url."\" class=\"external\" target=\"_blank\" title=\"".$linkInfoArray[KEY_IMAGE]."\"></a></li>";
+				<li class=\"findmeon-".$linkInfoArray[KEY_IMAGE]."\"><a href=\"".$url."\" class=\"external\" target=\"".$windowlocation."\" onclick=\"".$onclick."\" title=\"".$linkInfoArray[KEY_IMAGE]."\"></a></li>";
 
                 
                 if($row != $rows[count($rows)-1]){
@@ -868,6 +875,8 @@ function widget_find_me_on_settings(){
                             $newoptions['width'] = strip_tags(stripslashes($_POST['find-me-on-width']));
                             $newoptions['iconsize'] = strip_tags(stripslashes($_POST['find-me-on-iconsize']));
                             $newoptions['iconstyle'] = strip_tags(stripslashes($_POST['find-me-on-iconstyle']));
+                            $newoptions['windowlocation'] = strip_tags(stripslashes($_POST['find-me-on-windowlocation']));
+                            $newoptions['onclick'] = strip_tags(stripslashes($_POST['find-me-on-onclick']));
                 
                 
                             if ( $options != $newoptions ) {
@@ -880,6 +889,8 @@ function widget_find_me_on_settings(){
                         $width = empty($options['width']) ? 100 : $options['width'];
                         $iconsize = empty($options['iconsize']) ? 16 : $options['iconsize'];
                         $iconstyle = empty($options['iconstyle']) ? 0 : $options['iconstyle'];
+                        $windowlocation = empty($options['windowlocation']) ? '_blank' : $options['windowlocation'];
+                        $onclick = empty($options['onclick']) ? '' : $options['onclick'];
                 
                         
                         ?>
@@ -914,6 +925,23 @@ function widget_find_me_on_settings(){
 							</label>
 						
 					</div>
+                    
+                    <div class="padding">
+													
+                            <p>How do you want links to open?</p>
+
+							<label class="bgimg demo-blank">New (_blank)
+								<input <?php echo (($windowlocation == "_blank")? 'checked="checked"' : ""); ?> id="bgimg-caring" name="find-me-on-windowlocation" type="radio" value="_blank" />
+							</label>
+							<label class="bgimg demo-self">Same (_self)
+								<input <?php echo (($windowlocation == "_self")? 'checked="checked"' : ""); ?> id="bgimg-care-old" name="find-me-on-windowlocation" type="radio" value="_self" />
+					</div>
+                  
+                    
+                    <div class="padding">
+                    <p>Do you have a spiffy onclick in mind?</p>
+                        <input type="text" id="find-me-on-onclick" name="find-me-on-onclick" value="<?php echo $onclick; ?>" /><br>This will work: <code>alert('sometext');</code> <b>This won't:</b> <code>alert("sometext");</code></label>
+                     </div>
                     
                     
                     <div class="padding">
