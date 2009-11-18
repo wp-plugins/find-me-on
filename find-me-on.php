@@ -6,7 +6,7 @@ Description: The Find Me On sidebar widget displays icons for all of your social
 Author: Jeremy Anticouni
 Crack Coder: Ian Bruce =P
 Ace in the Hole: Jeremy Ethan Bohr
-Version: 2.0.7
+Version: 2.0.8
 Author URI: http://jeremyanticouni.com
 
 
@@ -32,10 +32,10 @@ http://www.gnu.org/licenses/gpl.txt
 
 */
 //call install function upon activation
-		register_activation_hook(__FILE__,'find_me_on_install');
+register_activation_hook(__FILE__,'find_me_on_install');
 		
 //TO DO use these definitions instead
-define('find_me_on_VERSION', '2.0.7');
+define('find_me_on_VERSION', '2.0.8');
 define('find_me_on_DB_VERSION', '2.1');
 
 define('KEY_SITE_ID',0);
@@ -45,10 +45,10 @@ define('KEY_INSTRUCTION',3);
 define('KEY_DISPLAY_NAME',4);
   
  //$sl_db_version = "1.0";
- $findmeonplugindir = get_settings('home').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
- $pluginrelativedir = '/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
+$findmeonplugindir = get_settings('home').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
+$pluginrelativedir = '/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
 
- $definitions = array(
+$definitions = array(
 array(0,'aim','aim:GoIM?screenname=%userid%','Enter your Screenname.','AIM'),
 array(1,'amazon','%userid%','Enter your complete Amazon Wishlist URL','Amazon Wishlist'),
 array(2,'apple','%userid%','Enter your complete Apple URL','Apple'),
@@ -123,22 +123,6 @@ array(70,'yammer','%userid%','Enter your complete Yammer URL','Yammer'),
 array(71,'yelp','%userid%','Enter your complete Yelp URL','Yelp'),
 array(72,'youtube','http://www.youtube.com/%userid%','Enter your YouTube username.','YouTube')
    );
-
-function curPageURL() {
- $pageURL = 'http';
- if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
- $pageURL .= "://";
- if ($_SERVER["SERVER_PORT"] != "80") {
-  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
- } else {
-  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
- }
- return $pageURL;
-}
-
-function curPageName() {
- return substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
-}
 
 function find_me_on_wrapper(){
 
@@ -811,7 +795,7 @@ function widget_find_me_on_settings(){
                             <div class="box-mid-body iconator" id="toggle1">
                                 <div class="padding">
                                     <div id="findmeon-networks">
-                                    	<p>Click-n-drag the icons until your happy.  Then do it again.</p>
+                                    	<p>Click-n-drag the icons until you're happy.  Then do it again.</p>
                                         <div  id="displayDiv" style="margin-left:auto; margin-right:auto; width:100%; cursor:move;" class="drop_target">
             							      <?php echo generatefindmeonPreviewInnerHTML("\n");  ?><img src="<?php echo $findmeonplugindir; ?>/images/ajax-loading.gif" style="display:none" id="addButtonLoader" />         
                                     </div>
