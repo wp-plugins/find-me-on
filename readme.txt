@@ -10,7 +10,7 @@ Requires at least: 2.6
 
 Tested up to: 2.8.6
 
-Stable tag: 2.0.6
+Stable tag: 2.0.9
 
 
 
@@ -143,6 +143,7 @@ Additional sites/services will be added in future releases of Find Me On.
 
 
 == Change Log ==
+* 2.0.9 Bugfix for WP sites not installed in site root
 * 2.0.8 Bugfix w/conflicting plugins
 * 2.0.7 Added link options, _blank/_self + onclick options
 * 2.0.6 Added Widget title on settings page

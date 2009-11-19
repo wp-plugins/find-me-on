@@ -19,7 +19,7 @@ function selectionChanged(){
 	else{
 		label.innerHTML = '';
 		settingInput.value = '';
-		addButton.disabled = true;
+		addButton.disabled = false;
 	}
 	
 }

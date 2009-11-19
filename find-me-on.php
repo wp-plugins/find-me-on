@@ -6,7 +6,7 @@ Description: The Find Me On sidebar widget displays icons for all of your social
 Author: Jeremy Anticouni
 Crack Coder: Ian Bruce =P
 Ace in the Hole: Jeremy Ethan Bohr
-Version: 2.0.8
+Version: 2.0.9
 Author URI: http://jeremyanticouni.com
 
 
@@ -35,7 +35,7 @@ http://www.gnu.org/licenses/gpl.txt
 register_activation_hook(__FILE__,'find_me_on_install');
 		
 //TO DO use these definitions instead
-define('find_me_on_VERSION', '2.0.8');
+define('find_me_on_VERSION', '2.0.9');
 define('find_me_on_DB_VERSION', '2.1');
 
 define('KEY_SITE_ID',0);
@@ -45,7 +45,7 @@ define('KEY_INSTRUCTION',3);
 define('KEY_DISPLAY_NAME',4);
   
  //$sl_db_version = "1.0";
-$findmeonplugindir = get_settings('home').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
+$findmeonplugindir = get_settings('siteurl').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
 $pluginrelativedir = '/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
 
 $definitions = array(
@@ -802,7 +802,7 @@ function widget_find_me_on_settings(){
                                 </div>
                             </div>
                             
-                            <div class="padding"
+                            <div class="padding">
                             <form method="post" onSubmit="find_me_on_ajax_saveOrder()" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">        
                             <input class="button-secondary" type="submit" id="saveOrderButton" name="saveorder" value="Save Icon Order" style="margin-top:0px"/>
                             <input type="hidden" name="sortOrderData" id="sortOrderData"/>
