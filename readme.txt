@@ -143,6 +143,7 @@ Additional sites/services will be added in future releases of Find Me On.
 
 
 == Change Log ==
+* 2.0.9.1 Fixed issue with jQuery that was causing conflicts with other plugins
 * 2.0.9 Bugfix for WP sites not installed in site root
 * 2.0.8 Bugfix w/conflicting plugins
 * 2.0.7 Added link options, _blank/_self + onclick options
