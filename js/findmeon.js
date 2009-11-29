@@ -19,7 +19,7 @@ function selectionChanged(){
 	else{
 		label.innerHTML = '';
 		settingInput.value = '';
-		addButton.disabled = false;
+		addButton.disabled = true;
 	}
 	
 }
@@ -76,8 +76,10 @@ function addLoadingIcon(){
 	$('displayDiv').appendChild(img);
 }
 
+
+/*
 function find_me_on_ajax_addNetwork(selectedIndex,textInput,responseDiv){
-	addLoadingIcon();
+
  	var siteID = $('networkDropdown').options[selectedIndex].value;
  	var mysack = new sack(getWordpressBaseLocation()+"wp-admin/admin-ajax.php" );    
 	
@@ -92,9 +94,32 @@ function find_me_on_ajax_addNetwork(selectedIndex,textInput,responseDiv){
 	mysack.onError = function() { alert('Ajax error while adding new network' )};
 	mysack.runAJAX();
 	
-	
+	alert('added');
+	createSortables();
+
   	return true;
 
+}
+*/
+
+function find_me_on_ajax_addNetwork(selectedIndex,textInput,responseDiv){
+	
+	var siteID = $('networkDropdown').options[selectedIndex].value;
+	var mysack = new sack(getWordpressBaseLocation()+"wp-admin/admin-ajax.php" );    
+	
+	mysack.execute = 1;
+	mysack.method = 'POST';
+	mysack.setVar( "action", "find_me_on_add_network" );
+	mysack.setVar( "siteID", siteID );
+	mysack.setVar( "value", textInput.value );
+	mysack.encVar( "cookie", document.cookie, false );
+	mysack.onError = function() { alert('Ajax error while adding new network' )};
+	
+	mysack.runAJAX();
+	
+	
+	return true;
+	
 }
 
 function find_me_on_ajax_delete_network(linkId){
@@ -111,6 +136,8 @@ function find_me_on_ajax_delete_network(linkId){
 	mysack.runAJAX();
 	
 	createSortables();
+
+alert('deleted')
 	
 	return true;
 }
@@ -142,259 +169,7 @@ if( div )
 }
 }
    
-jQuery(document).ready(function() {
-	if (jQuery('#iconator')) jQuery('#findmeon-networks').sortable({ 
-	delay:        250,
-	cursor:      'move',
-	scroll:       true,
-	revert:       true, 
-	opacity:      0.7
-});
-	if (jQuery('#findmeon-bookmarks')) { jQuery('#findmeon-sortables').sortable({ 
-	handle:      '.box-mid-head',
-	delay:        250,
-	cursor:      'move',
-	scroll:       true,
-	revert:       true, 
-	opacity:      0.7
-});
 
-// Check for Tumblr and alert of changes
-// then remove completely after accepted
-if (jQuery('#findmeon-tumblr').is(':checked')) {
-	jQuery('label.findmeon-tumblr').css('background-color', '#df6f6f');
-	jQuery('#findmeon-tumblr').removeAttr('checked');
-}
-else if (jQuery('#findmeon-tumblr').is(':not(:checked)')) {
-	jQuery('label.findmeon-tumblr').css('display', 'none');
-}
-
-
-jQuery('#info-manual').css({ display: 'none' });
-jQuery('#clear-warning').css({ display:'none' });
-jQuery('#custom-warning').css({ display:'none' });
-jQuery('#custom-warning-a').css({ display:'none' });
-jQuery('#mobile-warn').css({ display:'none' });
-
-
-if (jQuery('#autocenter-no').is(':not(:checked)')) {
-	this.checked=jQuery('#xtrastyle').attr('disabled', true);
-	this.checked=jQuery('#xtrastyle').val('Custom CSS has been disabled because you are using either the "Auto Space" or "Auto Center" option above.');
-}
-
-jQuery('#autocenter-yes').click(function() {
-	this.checked=jQuery('#custom-warning').fadeIn('fast');
-	this.checked=jQuery(this).is(':not(:checked)');
-});
-jQuery('#autospace-yes').click(function() {
-	this.checked=jQuery('#custom-warning-a').fadeIn('fast');
-	this.checked=jQuery(this).is(':not(:checked)');
-});
-
-jQuery('#custom-warn-yes').click(function() {
-	this.checked=jQuery('#custom-warning').fadeOut();
-	this.checked=jQuery('#autocenter-yes').attr('checked', 'checked');
-	this.checked=jQuery('#xtrastyle').attr('disabled', true);
-	this.checked=jQuery('#xtrastyle').val('Custom CSS has been disabled because you are using either the "Auto Space" or "Auto Center" option above.');
-	this.checked=jQuery(this).is(':not(:checked)');
-});
-jQuery('#custom-warn-yes-a').click(function() {
-	this.checked=jQuery('#custom-warning-a').fadeOut();
-	this.checked=jQuery('#autospace-yes').attr('checked', 'checked');
-	this.checked=jQuery('#xtrastyle').attr('disabled', true);
-	this.checked=jQuery('#xtrastyle').val('Custom CSS has been disabled because you are using either the "Auto Space" or "Auto Center" option above.');
-	this.checked=jQuery(this).is(':not(:checked)');
-});
-
-
-
-jQuery('#autocenter-no').click(function() {
-	this.checked=jQuery('#xtrastyle').removeAttr('disabled');
-	this.checked=jQuery('#xtrastyle').val('margin:20px 0 0 0 !important;\npadding:25px 0 0 10px !important;\nheight:29px;/*the height of the icons (29px)*/\ndisplay:block !important;\nclear:both !important;');
-});
-
-
-
-jQuery('.toggle').click(function(){
-	var id = jQuery(this).attr('id');
-	jQuery('#tog'+ id).slideToggle('slow');
-
-	if (jQuery('#'+ id + ' img.close').is(':hidden')){
-		jQuery('#'+ id +' img.close').show();
-		jQuery('#'+ id +' img.open').fadeOut();
-	} else {
-		jQuery('#'+ id + ' img.open').show();
-		jQuery('#'+ id + ' img.close').fadeOut();
-	}
-});
-
-
-
-// Apply "smart options" to BG image
-jQuery('#bgimg-yes').click(function() {
-	jQuery('#bgimgs').toggleClass('hidden').toggleClass('');
-});
-
-
-// Apply "smart options" to Yahoo! Buzz
-if (jQuery('#findmeon-yahoobuzz').is(':checked')) {
-	jQuery('#ybuzz-defaults').is(':visible');
-}
-else if (jQuery('#findmeon-yahoobuzz').is(':not(:checked)')) {
-	jQuery('#ybuzz-defaults').is(':hidden');
-}
-jQuery('#findmeon-yahoobuzz').click(function() {
-	if (this.checked) {
-		this.checked=jQuery('#ybuzz-defaults').fadeIn('fast');
-	}
-	else {
-		jQuery('#ybuzz-defaults').fadeOut();
-	}
-});
-
-// Apply "smart options" to Twittley
-if (jQuery('#findmeon-twittley').is(':checked')) {
-	jQuery('#twittley-defaults').is(':visible');
-}
-else if (jQuery('#findmeon-twittley').is(':not(:checked)')) {
-	jQuery('#twittley-defaults').is(':hidden');
-}
-jQuery('#findmeon-twittley').click(function() {
-	if (this.checked) {
-		this.checked=jQuery('#twittley-defaults').fadeIn('fast');
-	}
-	else {
-		jQuery('#twittley-defaults').fadeOut();
-	}
-});
-
-// Apply "smart options" to Twitter
-if (jQuery('#findmeon-twitter').is(':checked')) {
-	jQuery('#twitter-defaults').is(':visible');
-}
-else if (jQuery('#findmeon-twitter').is(':not(:checked)')) {
-	jQuery('#twitter-defaults').is(':hidden');
-}
-jQuery('#findmeon-twitter').click(function() {
-	if (this.checked) {
-		this.checked=jQuery('#twitter-defaults').fadeIn('fast');
-	}
-	else {
-		jQuery('#twitter-defaults').fadeOut();
-	}
-});
-
-
-// Apply "smart options" to bit.ly DIV
-jQuery('#shorty').click(function() {
-	if (jQuery("#shorty option[value='bitly']").is(':selected')) {
-		jQuery('#shortyapimdiv-bitly').fadeIn('fast');
-	}
-	else {
-		jQuery('#shortyapimdiv-bitly').fadeOut('fast');
-	}
-});
-
-
-// Fade in/out mobile feature warning
-jQuery('#mobile-hide').click(function() {
-	if (this.checked) {
-		this.checked=jQuery('#mobile-warn').fadeIn('fast');
-	}
-	else {
-		jQuery('#mobile-warn').fadeOut();
-	}
-});
-
-
-jQuery('#position-above').click(function() {
-	if (jQuery('#info-manual').is(':visible')) {
-		this.checked=jQuery('#info-manual').fadeOut();
-	}
-});
-
-jQuery('#position-below').click(function() {
-	if (jQuery('#info-manual').is(':visible')) {
-		this.checked=jQuery('#info-manual').fadeOut();
-	}
-});
-
-jQuery('#position-manual').click(function() {
-	if (jQuery('#info-manual').is(':not(:visible)')) {
-		this.checked=jQuery('#info-manual').fadeIn('slow');
-	}
-});
-
-jQuery('.dtags-info').click(function() {
-	jQuery('#tag-info').fadeIn('fast');
-});
-
-jQuery('.dtags-close').click(function() {
-	jQuery('#tag-info').fadeOut();
-});
-
-jQuery('.shebang-info').click(function() {
-	jQuery('#info-manual').fadeIn('fast');
-});
-
-jQuery('.boxcloser').click(function() {
-	jQuery('.findmeon-donation-box').slideUp('slow');
-});
-
-jQuery('#yourversion .del-x').click(function() {
-	jQuery('#yourversion').fadeOut();
-});
-
-jQuery('div#errmessage img.del-x').click(function() {
-	jQuery('div#errmessage').fadeOut();
-});
-
-jQuery('div#warnmessage img.del-x').click(function() {
-	jQuery('div#warnmessage').fadeOut();
-});
-
-jQuery('div#statmessage img.del-x').click(function() {
-	jQuery('div#statmessage').fadeOut();
-});
-
-jQuery('div#clearurl img.del-x').click(function() {
-	jQuery('div#clearurl').fadeOut();
-});
-
-jQuery('#info-manual img.del-x').click(function() {
-	jQuery('#info-manual').fadeOut();
-});
-
-jQuery('#mobile-warn img.del-x').click(function() {
-	jQuery('#mobile-warn').fadeOut();
-});
-
-
-
-
-jQuery('#clearShortUrls').click(function() {
-    if (jQuery('#clearShortUrls').is(':checked')) {
-        this.checked=jQuery('#clear-warning').fadeIn('fast');
-    }else{
-        this.checked=jQuery(this).is(':not(:checked)');
-    }
-    this.checked=jQuery(this).is(':not(:checked)');
-});
-
-
-
-jQuery('#warn-cancel').click(function() {
-	this.checked=jQuery('#clear-warning').fadeOut();
-	this.checked=jQuery(this).is(':not(:checked)');
-});
-
-jQuery('#warn-yes').click(function() {
-	this.checked=jQuery('#clear-warning').fadeOut();
-	this.checked=jQuery('#clearShortUrls').attr('checked', 'checked');
-	this.checked=!this.checked;
-});
-
-}});
 
 /***********************************************
 * Dynamic Ajax Content- © Dynamic Drive DHTML code library (www.dynamicdrive.com)

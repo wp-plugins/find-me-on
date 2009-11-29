@@ -6,7 +6,7 @@ Description: The Find Me On sidebar widget displays icons for all of your social
 Author: Jeremy Anticouni
 Crack Coder: Ian Bruce =P
 Ace in the Hole: Jeremy Ethan Bohr
-Version: 2.0.9
+Version: 2.0.9.1
 Author URI: http://jeremyanticouni.com
 
 
@@ -35,7 +35,7 @@ http://www.gnu.org/licenses/gpl.txt
 register_activation_hook(__FILE__,'find_me_on_install');
 		
 //TO DO use these definitions instead
-define('find_me_on_VERSION', '2.0.9');
+define('find_me_on_VERSION', '2.0.9.1');
 define('find_me_on_DB_VERSION', '2.1');
 
 define('KEY_SITE_ID',0);
@@ -206,11 +206,11 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 			global $definitions;
 			global $message;
 			global $status_message;
-			
+					
 			$siteID = $_POST['siteID'];
 			$data = $_POST['value'];
 			$messageId = $_POST['responseDiv'];
-		
+				
 			$result = insertNetwork($siteID,$data);
 			if($result == 1)
 			{
